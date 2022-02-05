@@ -54,8 +54,8 @@ describe("Conversor Romano", () => {
 });
 
 describe("Conversor Romano", () => {
-  it("Tem que retornar IV quando converter(9)", () => {
-    expect(converter(9)).toBe("IV");
+  it("Tem que retornar IX quando converter(9)", () => {
+    expect(converter(9)).toBe("IX");
   });
 });
 

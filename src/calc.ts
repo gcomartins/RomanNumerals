@@ -1,71 +1,41 @@
 export function converter(numero: number): string {
-  if (numero < 0) {
-    throw new Error("Número inconversível!");
-  }
+  // if (numero < 0) {
+  //   throw new Error("Número inconversível!");
+  // }
   if (numero === 0) {
-    return "Zero";
+    return "Os romanos não tinham um sinal para representar o zero porque simplesmente não precisavam representar o nada. Essa necessidade só surgiu quando se criou um sistema numérico posicional, ou seja, um sistema no qual a posição dos algarismos dá a eles valores diferentes.";
+  }
+  let resultado: string = "";
+  while (numero >= 10) {
+    resultado += "X";
+    numero -= 10;
   }
   if (numero === 1) {
-    return "I";
+    resultado +="I";
   }
   if (numero === 2) {
-    return "II";
+    resultado +="II";
   }
   if (numero === 3) {
-    return "III";
+    resultado +="III";
   }
   if (numero === 4) {
-    return "IV";
+    resultado +="IV";
   }
   if (numero === 5) {
-    return "V";
+    resultado +="V";
   }
   if (numero === 6) {
-    return "VI";
+    resultado +="VI";
   }
   if (numero === 7) {
-    return "VII";
+    resultado +="VII";
   }
   if (numero === 8) {
-    return "VIII";
+    resultado +="VIII";
   }
   if (numero === 9) {
-    return "IV";
+    resultado +="IX";
   }
-  if (numero === 10) {
-    return "X";
-  }
-  if (numero === 11) {
-    return "XI";
-  }
-  if (numero === 12) {
-    return "XII";
-  }
-  if (numero === 13) {
-    return "XIII";
-  }
-  if (numero === 14) {
-    return "XIV";
-  }
-  if (numero === 15) {
-    return "XV";
-  }
-  if (numero === 16) {
-    return "XVI";
-  }
-  if (numero === 17) {
-    return "XVII";
-  }
-  if (numero === 18) {
-    return "XVIII";
-  }
-  if (numero === 19) {
-    return "XIX";
-  }
-  if (numero === 20) {
-    return "XX";
-  }
-  return "Número desconhecido!";
+  return resultado;
 }
-
-
