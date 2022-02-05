@@ -1,7 +1,7 @@
 export function converter(numero: number): string {
-  // if (numero < 0) {
-  //   throw new Error("Número inconversível!");
-  // }
+  if (numero < 0) {
+    throw new Error("Não existem números romanos negativos!");
+  }
   if (numero === 0) {
     return "Os romanos não tinham um sinal para representar o zero porque simplesmente não precisavam representar o nada. Essa necessidade só surgiu quando se criou um sistema numérico posicional, ou seja, um sistema no qual a posição dos algarismos dá a eles valores diferentes.";
   }

@@ -1,13 +1,19 @@
 import { converter } from "../src/calc";
-// describe("Conversor Romano", () => {
-//   it("Tem que lançar exceção quando for passado algum número menor que 0", () => {
-//     expect(converter(-1)).toThrow();
-//   });
-// });
+describe("Conversor Romano", () => {
+  it("Tem que lançar exceção quando for passado algum número menor que 0", () => {
+    expect(()=>converter(-1)).toThrow ()
+  });
+});
 
 describe("Conversor Romano", () => {
   it("Tem que retornar I quando converter(1)", () => {
     expect(converter(1)).toBe("I");
+  });
+});
+
+describe("Conversor Romano", () => {
+  it("Tem que retornar I quando converter(1)", () => {
+    expect(converter(0)).toBe("Os romanos não tinham um sinal para representar o zero porque simplesmente não precisavam representar o nada. Essa necessidade só surgiu quando se criou um sistema numérico posicional, ou seja, um sistema no qual a posição dos algarismos dá a eles valores diferentes.");
   });
 });
 
@@ -66,18 +72,6 @@ describe("Conversor Romano", () => {
 });
 
 describe("Conversor Romano", () => {
-  it("Tem que retornar XI quando converter(11)", () => {
-    expect(converter(11)).toBe("XI");
-  });
-});
-
-describe("Conversor Romano", () => {
-  it("Tem que retornar XII quando converter(12)", () => {
-    expect(converter(12)).toBe("XII");
-  });
-});
-
-describe("Conversor Romano", () => {
   it("Tem que retornar XIII quando converter(13)", () => {
     expect(converter(13)).toBe("XIII");
   });
@@ -96,24 +90,6 @@ describe("Conversor Romano", () => {
 });
 
 describe("Conversor Romano", () => {
-  it("Tem que retornar XVI quando converter(16)", () => {
-    expect(converter(16)).toBe("XVI");
-  });
-});
-
-describe("Conversor Romano", () => {
-  it("Tem que retornar XVII quando converter(17)", () => {
-    expect(converter(17)).toBe("XVII");
-  });
-});
-
-describe("Conversor Romano", () => {
-  it("Tem que retornar XVIII quando converter(18)", () => {
-    expect(converter(18)).toBe("XVIII");
-  });
-});
-
-describe("Conversor Romano", () => {
   it("Tem que retornar XIX quando converter(19)", () => {
     expect(converter(19)).toBe("XIX");
   });
@@ -126,26 +102,8 @@ describe("Conversor Romano", () => {
 });
 
 describe("Conversor Romano", () => {
-  it("Tem que retornar XXV quando converter(25)", () => {
-    expect(converter(25)).toBe("XXV");
-  });
-});
-
-describe("Conversor Romano", () => {
   it("Tem que retornar XL quando converter(40)", () => {
     expect(converter(40)).toBe("XL");
-  });
-});
-
-describe("Conversor Romano", () => {
-  it("Tem que retornar XLIII quando converter(43)", () => {
-    expect(converter(43)).toBe("XLIII");
-  });
-});
-
-describe("Conversor Romano", () => {
-  it("Tem que retornar XLIX quando converter(49)", () => {
-    expect(converter(49)).toBe("XLIX");
   });
 });
 
@@ -156,20 +114,8 @@ describe("Conversor Romano", () => {
 });
 
 describe("Conversor Romano", () => {
-  it("Tem que retornar LXXIII quando converter(73)", () => {
-    expect(converter(73)).toBe("LXXIII");
-  });
-});
-
-describe("Conversor Romano", () => {
-  it("Tem que retornar LXXXIX quando converter(89)", () => {
-    expect(converter(89)).toBe("LXXXIX");
-  });
-});
-
-describe("Conversor Romano", () => {
-  it("Tem que retornar XCV quando converter(95)", () => {
-    expect(converter(95)).toBe("XCV");
+  it("Tem que retornar XC quando converter(90)", () => {
+    expect(converter(90)).toBe("XC");
   });
 });
 
@@ -180,20 +126,8 @@ describe("Conversor Romano", () => {
 });
 
 describe("Conversor Romano", () => {
-  it("Tem que retornar CCCXXXIII quando converter(333)", () => {
-    expect(converter(333)).toBe("CCCXXXIII");
-  });
-});
-
-describe("Conversor Romano", () => {
   it("Tem que retornar CD quando converter(400)", () => {
     expect(converter(400)).toBe("CD");
-  });
-});
-
-describe("Conversor Romano", () => {
-  it("Tem que retornar CDXLIV quando converter(444)", () => {
-    expect(converter(444)).toBe("CDXLIV");
   });
 });
 
@@ -204,20 +138,8 @@ describe("Conversor Romano", () => {
 });
 
 describe("Conversor Romano", () => {
-  it("Tem que retornar DCCCXLIX quando converter(849)", () => {
-    expect(converter(849)).toBe("DCCCXLIX");
-  });
-});
-
-describe("Conversor Romano", () => {
   it("Tem que retornar CM quando converter(900)", () => {
     expect(converter(900)).toBe("CM");
-  });
-});
-
-describe("Conversor Romano", () => {
-  it("Tem que retornar CMXCIV quando converter(994)", () => {
-    expect(converter(994)).toBe("CMXCIV");
   });
 });
 
