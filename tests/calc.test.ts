@@ -1,13 +1,13 @@
 import { converter } from "../src/calc";
 describe("Conversor Romano", () => {
   it("Tem que lançar exceção quando for passado algum número menor que 0", () => {
-    expect(()=>converter(-1)).toThrow ()
+    expect(()=>converter(-1)).toThrow();
   });
 });
 
 describe("Conversor Romano", () => {
-  it("Tem que retornar um texto quando converter(0)", () => {
-    expect(converter(0)).toBe("Os romanos não tinham um sinal para representar o zero porque simplesmente não precisavam representar o nada. Essa necessidade só surgiu quando se criou um sistema numérico posicional, ou seja, um sistema no qual a posição dos algarismos dá a eles valores diferentes.");
+  it("Tem que retornar uma excessão quando converter(0)", () => {
+    expect(()=>converter(0)).toThrow();
   });
 });
 
