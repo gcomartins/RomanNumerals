@@ -6,14 +6,14 @@ describe("Conversor Romano", () => {
 });
 
 describe("Conversor Romano", () => {
-  it("Tem que retornar I quando converter(1)", () => {
-    expect(converter(1)).toBe("I");
+  it("Tem que retornar um texto quando converter(0)", () => {
+    expect(converter(0)).toBe("Os romanos não tinham um sinal para representar o zero porque simplesmente não precisavam representar o nada. Essa necessidade só surgiu quando se criou um sistema numérico posicional, ou seja, um sistema no qual a posição dos algarismos dá a eles valores diferentes.");
   });
 });
 
 describe("Conversor Romano", () => {
   it("Tem que retornar I quando converter(1)", () => {
-    expect(converter(0)).toBe("Os romanos não tinham um sinal para representar o zero porque simplesmente não precisavam representar o nada. Essa necessidade só surgiu quando se criou um sistema numérico posicional, ou seja, um sistema no qual a posição dos algarismos dá a eles valores diferentes.");
+    expect(converter(1)).toBe("I");
   });
 });
 
